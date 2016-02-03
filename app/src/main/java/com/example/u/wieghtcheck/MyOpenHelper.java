@@ -16,6 +16,11 @@ public class MyOpenHelper extends SQLiteOpenHelper{
             "_id integer primary key," +
             "Date text," +
             "Weight text);";
+    private static final String create_table_user = "create table userTable (" +
+            "_id string primary key," +
+            "fname text," +
+            "lname text," +
+            "email text);";
 
     public MyOpenHelper(Context context) {
         super(context, database_name, null, database_version);
@@ -24,6 +29,7 @@ public class MyOpenHelper extends SQLiteOpenHelper{
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
         sqLiteDatabase.execSQL(create_table_weight);
+        sqLiteDatabase.execSQL(create_table_user);
     }
 
     @Override
