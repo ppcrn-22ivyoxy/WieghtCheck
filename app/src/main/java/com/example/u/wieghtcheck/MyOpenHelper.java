@@ -22,6 +22,7 @@ public class MyOpenHelper extends SQLiteOpenHelper{
             "lname text," +
             "email text);";
 
+
     public MyOpenHelper(Context context) {
         super(context, database_name, null, database_version);
     }   // constructor
