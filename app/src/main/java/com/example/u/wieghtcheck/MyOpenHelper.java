@@ -17,10 +17,10 @@ public class MyOpenHelper extends SQLiteOpenHelper{
             "Date text," +
             "Weight text);";
     private static final String create_table_user = "create table userTable (" +
-            "_id string primary key," +
-            "fname text," +
-            "lname text," +
-            "email text);";
+            "_id integer primary key," +
+            "User text," +
+            "Password text," +
+            "Name text);";
 
 
     public MyOpenHelper(Context context) {
