@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         objMyManage = new MyManage(this);
 
         //Check Register
-        checkRegister();
+       //checkRegister();
 
     }   // Main Method
 
